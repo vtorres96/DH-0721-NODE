@@ -1,0 +1,85 @@
+PO (Product Owner - Dono do Produto)
+  um integrante da euqipe que irá fazer reuniões com a área de negócios
+  para definição de regras de negócio, e, efetua reuniões com o usuário
+  a fim entender quais são as prioridades, o que pretendem desenvolver,
+  e até mesmo sobre novas features / atualização destas features.
+
+"Usuário"
+  pode ser um funcionário de uma outra empresa que no caso são empresas 
+  clientes da empresa onde estamos atuando, por exemplo, Digital House
+  tem um portal de parceiros onde as empresas parceiras / clientes 
+  tem algumas funcionalidades dentro deste portal, vamos imaginar que a empresa
+  Santander será a empresa "usuária" deste portal, portanto, se algo ocorrer
+  de errado desde um simples login, até mesmo a outras situações, alguém
+  que atua na empresa Santander entrará em contato com alguém da empresa Digital House,
+  logo, este funcionário do Santander que entra em contato é considerado "usuário"
+
+Como surge uma demanda para a equipe e quais etapas são efetuadas até a entrega da demanda
+
+PO faz reunião com a área de negócios e define um planejamento, por exemplo, um cadastro de
+veículo, terá que possuir um formulário contendo os seguintes campos:
+placa, modelo, fabricante, peso
+
+Após as definições junto com a área de negócios, o PO criará uma "história" para que algum 
+desenvolvedor possa dar início e desenvolver uma tela contendo um formulário com os seguintes 
+campos: placa, modelo, fabricante, peso
+
+Scrum Master
+  Fica responsável por remover obstáculos que possam impedir a equipe de desenvolvimento
+  Busca controlar o tempo, sempre alinhando prazos de entrega com a equipe, e, 
+  buscar controlar o tempo das reuniões a fim de não exceder muito os tempos programados
+
+Dev Team (Equipe de Desenvolvimento)
+  Fica responsável por desenvolver as tarefas e tirá-las do "papel"
+
+Product Backlog 
+  Conjunto de requisitos (conjunto de tarefas) que deveremos implementar no projeto, 
+  são as tarefas criadas no Product Backlog que depois acabam compondo uma nova sprint.
+
+Planning
+  Momento onde PO, Scrum Master e Dev Team se reúnem para definir quais serão as tarefas
+  que irã compor uma nova sprint.
+
+Sprint Backlog
+  Etapa de definição de quais tarefas serão realizadas dentro de uma sprint
+  (geralmente definido por Product Owner e Dev Team)
+
+Sprints
+  Ciclo dentro do projeto que teremos algumas tarefas a realizar e cumprir o prazo da 
+  sprint que geralmente é de 15 a 30 dias. Geralmente definimos um pacote de tarefas
+  a serem executadas dentro do prazo (15-30 dias) e desta forma criamos uma sprint,
+  onde, dentro do prazo determinado teremos que dar vazão e concluir as tarefas que foram 
+  adicionadas na sprint.
+  Obs: uma sprint sempre é criada com base nas tarefas do Product Backlog 
+
+Daily
+  Reunião que é feita a fim de toda equipe de desenvolvimento passar um feedback de que 
+  ponto determinado está em uma tarefa específica, ou seja, nesta reunião os desenvolvedores
+  tem a oportunidade de citar se estão com algum impedimento para concluir a tarefa, ou, até 
+  mesmo se estão conseguindo progredir sem impeditivos.
+  Obs: esta reunião deve durar no máximo 15 minutos, pois, é uma reunião apenas de reporte
+  do que foi feito no dia anterior e qual o seu plano para o dia atual
+
+Sprint Review (Geralmente falam apenas Review)
+  Reunião para pontuar o que foi bacana e o que foi ruim dentro da sprint atual,
+  ou seja, através dela começamos a analisar de forma mais bacana as entregas, e,
+  que a equipe começa a ter um "tato" para planejar melhor as tarefas
+  e consequentemente as entregas
+  Obs: ocorre geralmente junto com a Retro (não é um caso obrigatório)
+
+Sprint Retro
+  Reunião com foco em buscar melhorias 
+    Obs: ocorre geralmente junto com a Review (não é um caso obrigatório)
+
+O que ocorre caso não cumpra o prazo de entrega da minha tarefa dentro de uma sprint ?
+  10 tarefas para realizar na sprint 1, se conclui apenas 9, a tarefa que estou atuando
+  naquele momento em que a sprint se encerrou, irá "transbordar" para a sprint 2
+
+Scrum Board
+  Podemos considerar que é um painel de gestão de tarefas, através dele, conseguimos saber:
+  - quais tarefas estão compondo a sprint
+  - quais tarefas ainda não foram executadas (To Do - A fazer)
+  - quais tarefas estão sendo executadas naquele momento (Doing - Fazendo)
+  - quais tarefas foram concluídas (Done - Finalizadas)
+  - qual desenvolvedor está com determinada tarefa
+

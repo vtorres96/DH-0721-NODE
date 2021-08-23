@@ -1,0 +1,23 @@
+O que é o Projeto integrador ?
+  O PI é uma forma semelhante a um TCC (Trabalho de Conclusão de Curso), com o intuito
+  de desenvolver um projeto por etapas e ter o mesmo concluído até o final do curso
+
+Quantos integrantes por grupo de Projeto Integrador ?
+  O PI é feito em grupo de até quatro pessoas
+
+Como ocorreram as entregas ?
+  O desenvolvimento desde o protótipo até mesmo os finalmentes do projeto será todo
+  entregue utilizando metodologias ágeis (iremos aprender na semana que vem)
+
+Simulação da evolução do projeto integrador (como funcionarão as entregas) 
+
+  1º passo: os professores irão passar um passo a passo para que os grupos
+  realizem determinadas tarefas a fim de cumprir um prazo de entrega e que
+  evoluam o projeto cumprindo também as tarefas solicitadas.
+  2º passo: os alunos irão desenvolver as tarefas ao longo de um prazo sem 
+  a ajuda dos professores durante tempo de aula, podendo tirar dúvidas a respeito
+  do PI através do slack, ou, até mesmo de um co-learning, meio que como uma forma de mentoria.
+  3º passo: o projeto tem alguns requisitos obrigatórios independente do tema escolhido,
+  por exemplo, requisitos tais como: login/logout de usuários, armazenar as informações
+  todas em banco de dados, trabalhar com métodos CRUD para manipularmos registros no banco
+  (Create, Read, Update, Delete - Criar, Listar/Ler, Atualizar, Excluir)

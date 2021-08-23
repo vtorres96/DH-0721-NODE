@@ -1,0 +1,22 @@
+Qual foi o padrão que vocês notaram, desde criarmos um arquivo
+em nossa máquina até "enviá-lo" para o repositório no github,
+qual a sequência de comandos foi notada ?
+
+sempre temos um prefixo antes de qualquer comando: git
+
+sequência para trabalhar com o envio de arquivos de nossa máquina (localmente)
+para o repositório github (remoto), é a seguinte:
+
+adicionar os arquivos no STAGE (armazenados meio que em um cache pré-envio)
+git add .
+
+adicionar uma mensagem ao seu pacote de alterações
+git commit -m "refatorando metodo de inserir usuario"
+
+efetua uma comparação dos arquivos que estão no repositório remoto no Github
+e dos arquivos locais que temos em nossas máquinas, sendo assim, ele buscará
+atualizar nosso repositório local com base no repositório remoto.
+git pull
+
+envia os arquivos que estão no STAGE para o Github
+git push
