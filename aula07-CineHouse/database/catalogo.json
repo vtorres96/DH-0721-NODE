@@ -1,0 +1,26 @@
+[
+  {
+    "codigo": 1,
+    "titulo": "Lágrimas do Sol",
+    "duracao": 1.20,
+    "atores": ["Bruno", "João", "Joana"],
+    "anoDeLancamento": 2005,
+    "emCartaz": true
+  },
+  {
+    "codigo": 2,
+    "titulo": "Homens de Preto",
+    "duracao": 2.10,
+    "atores": ["Will", "Smith", "Victor"],
+    "anoDeLancamento": 2008,
+    "emCartaz": false
+  },
+  {
+    "codigo": 3,
+    "titulo": "Se eu fosse você",
+    "duracao": 2,
+    "atores": ["Tony", "Ramos"],
+    "anoDeLancamento": 2008,
+    "emCartaz": false
+  }
+]
