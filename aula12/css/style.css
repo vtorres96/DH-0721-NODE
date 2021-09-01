@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    /* fixar header na tela */
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    /* projeta o elemento a frente dos outros */
+    z-index: 3;
+    /* posicionamento */
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    /* alinhamento horizontal */
+    align-items: center;
+    /* alinhamento vertical */
+}
+
+header .logo h1 {
+    display: inline-block;
+    color: #777;
+    font-size: 40px;
+}
+
+header .logo h2 {
+    display: inline-block;
+    color: #777;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+main section.banner .slide img {
+    width: 100%;
+}
+
+main section.banner .container {
+    position: relative;
+}
+
+main section.banner .container .setas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    /* alainhamento vertical */
+    align-items: center;
+}
+
+main section.banner .container .setas a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+main section.banner {
+    padding: 50px 0;
+}
+
+main section.projects .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section.projects .container article {
+    width: 450px;
+    max-width: 100%;
+    background-color: #EEEEEE;
+    color: #888888;
+}
+
+main section.projects .container article .thumb {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section.projects .container article .info {
+    padding: 20px;
+}
+
+main section.projects .container article .info .price-tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.projects .container article .info .price {
+    font-size: 30px;
+    margin: 0;
+}
+
+main section.projects .container article .info .tag {
+    padding: 5px 10px;
+    background-color: gray;
+    color: #fff;
+    margin: 0;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+main section.projects .container article .info .tag-new {
+    background-color: #51D275;
+}
+
+main section.projects .container article .info .tag-sale {
+    background-color: #DC9730;
+}
+
+main section.styles article {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+main section.styles article h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 400;
+}
+
+section.contato h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+form {
+    width: 500px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+form input:not([type='radio']):not([type='checkbox']),
+form textarea,
+form select {
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form fieldset {
+    margin: 10px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #DC9730;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: 'Ropa Sans', sans-serif;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #51D275;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a:any-link {
+    color: #ffffff;
+}
+
+footer iframe {
+    width: 400px;
+    height: 350px;
+    max-width: 100%;
+}
+
+.main-form {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* estilo de botão para <button> ou <a> */
+.btn-primary {
+    background-color: #DC9730;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    main section.projects .container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main section.projects .container article {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 740px) {
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}

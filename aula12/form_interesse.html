@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVT - Formulário enviado!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LOVT</h1>
+                <h2>You Love, <br>
+                    your loft!</h2>
+            </div>
+
+            <button class="menu-toggle">☰</button>
+        </div>
+    </header>
+    <main class="main-form">
+        <div class="container">
+
+            <h1>Quero um loft!</h1>
+            <form action="form_interesse.html">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Jane Doe">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone">
+                <fieldset>
+                    <legend>Contrato</legend>
+
+                    <input type="checkbox" name="contrato" id="contrato_aluguel" value="Aluguel">
+                    <label for="contrato_aluguel">Aluguel</label>
+
+                    <input type="checkbox" name="contrato" id="contrato_compra" value="Compra">
+                    <label for="contrato_compra">Compra</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pet Friendly</legend>
+
+                    <input type="radio" name="petfriendly" id="petfriendly_sim" value="sim">
+                    <label for="petfriendly_sim">Sim</label>
+
+                    <input type="radio" name="petfriendly" id="petfriendly_nao" value="não">
+                    <label for="petfriendly_nao">Não</label>
+                </fieldset>
+                <label for="regiao">Região</label>
+                <select name="regiao" id="regiao">
+                    <option value="centro">Centro</option>
+                    <option value="norte">Norte</option>
+                    <option value="sul">Sul</option>
+                    <option value="leste">Leste</option>
+                    <option value="oeste">Oeste</option>
+                </select>
+
+                <label for="observacoes">Observações</label>
+                <textarea name="observacoes" id="observacoes"></textarea>
+
+                <button type="submit" class="btn-primary">enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.9887213576935!2d-46.77459098492407!3d-23.532908066427485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1620686989546!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="informacoes">
+            <p>LOVT - You love, your loft!</p>
+
+            <p>Broad St, <br>
+                Newark, NJ 07102 - USA</p>
+
+            <p>
+                <a href="tel:+1973854555548">+1 (973) 854-555-548</a>
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send?phone=551973854555548&text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento!">
+                    (WhatsApp)</a>
+            </p>
+
+            <p><a href="mailto:contact@lovtrealstate.com">contact@lovtrealstate.com</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
