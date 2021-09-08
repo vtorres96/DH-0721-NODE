@@ -1,0 +1,59 @@
+header {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgrey;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+header ul li {
+  margin-right: 30px;
+}
+
+section.banner img {
+  width: 100%;
+}
+
+section.estilo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.estilo h1 {
+  font-size: 36px;
+}
+
+section.estilo div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.estilo div .imagem-estilo {
+  height: 500px;
+  align-self: center;
+}
+
+section.trinta-off {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.trinta-off div.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.trinta-off div.cards div {
+  margin-right: 30px;
+}
