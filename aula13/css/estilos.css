@@ -1,9 +1,13 @@
+/* seletor universal, utilizado para aplicar propriedades em todos elementos do HTML */
+/* * {
+  margin: 0;
+} */
+
 header {
   height: 110px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: darkgrey;
 }
 
 header ul {
@@ -46,6 +50,10 @@ section.trinta-off {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: #c2185B;
+  margin: 10% 0;
+  height: 550px;
 }
 
 section.trinta-off div.cards {
@@ -55,5 +63,11 @@ section.trinta-off div.cards {
 }
 
 section.trinta-off div.cards div {
-  margin-right: 30px;
+  background-color: #fff;
+  margin: 15px;
+}
+
+section.ver-detalhes {
+  display: flex;
+  justify-content: space-around;
 }

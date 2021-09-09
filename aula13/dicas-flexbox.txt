@@ -1,0 +1,15 @@
+Se utilizo o conceito de alinhar os elementos em linha,
+utilizando a propriedade
+flex-direction: row
+para centralizar os elementos em relação ao eixo Y
+align-items: center
+para centralizar os elementos em relação ao eixo X
+justify-content: center
+
+Se utilizo o conceito de alinhar os elementos em coluna,
+utilizando a propriedade
+flex-direction: column
+para centralizar os elementos em relação ao eixo Y
+justify-content: center
+para centralizar os elementos em relação ao eixo X
+align-items: center
