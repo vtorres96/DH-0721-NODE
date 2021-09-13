@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoes Store</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./css/trabalhe-conosco.css">
+</head>
+<body>
+  <header>
+    <img src="./img/shoes-logo.png" alt="logo" title="logo">
+    <ul>
+      <li>Todos os produtos, </li>
+      <li>Coleções</li>
+      <li>Outlet</li>
+    </ul>
+  </header>
+  <main>
+    <section class="formulario">
+      <h1>Faça parte do nosso time</h1>
+      <form action="" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email">
+
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+
+        <label for="departamento">Departamento</label>
+        <select name="departamento" id="departamento">
+          <option value="TI">TI</option>
+          <option value="financeiro">Financeiro</option>
+          <option value="juridico">Jurídico</option>
+          <option value="rh">RH</option>
+        </select>
+
+        <label for="disponibilidade">Disponibilidade</label>
+        <input type="checkbox" name="disponibilidade" id="integral" value="integral">
+        <label for="integral">Integral</label>
+        <input type="checkbox" name="disponibilidade" id ="meio-periodo" value="meio-periodo">
+        <label for="meio-periodo">Meio Período</label>
+        <input type="checkbox" name="disponibilidade" id="freelancer" value="freelancer">
+        <label for="freelancer">Freelancer</label>
+
+        <label for="contato">Qual a meelhor forma de entrar em contato com você</label>
+        <input type="radio" name="contato" id="email" value="email">
+        <label for="email">E-mail</label>
+        <input type="radio" name="contato" id="ligacao" value="ligacao">
+        <label for="ligacao">Ligação</label>
+        <input type="radio" name="contato" id="whatsapp" value="whatsapp">
+        <label for="whatsapp">Whatsapp</label>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+        <label for="curriculo">Currículo</label>
+        <button class="upload-curriculo">Upload</button>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <section class="infos-formulario">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
+    </section>
+  </main>
