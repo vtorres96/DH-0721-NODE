@@ -71,3 +71,60 @@ section.ver-detalhes {
   display: flex;
   justify-content: space-around;
 }
+
+div.conteudo-sandalia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+div.conteudo-sandalia h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+div.conteudo-sandalia button {
+  color: #fff;
+  background: #c2185B;
+  width: 230px;
+  display: flex;
+  font-size: 24px;
+  height: 50px;
+  align-items: center;
+  border: none;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  background: #c2185B;
+  margin: 100px 0 0 0;
+}
+
+footer div.footer-logo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer div.footer-logo img {
+  width: 200px;
+  height: 100px;
+}
+
+footer div.footer-listas {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div.footer-listas ul {
+  list-style: none;
+}
