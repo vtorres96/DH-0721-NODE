@@ -18,54 +18,98 @@
     </ul>
   </header>
   <main>
-    <section class="formulario">
-      <h1>Faça parte do nosso time</h1>
-      <form action="" method="post">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
-
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email">
-
-        <label for="telefone">Telefone</label>
-        <input type="text" name="telefone" id="telefone">
-
-        <label for="departamento">Departamento</label>
-        <select name="departamento" id="departamento">
-          <option value="TI">TI</option>
-          <option value="financeiro">Financeiro</option>
-          <option value="juridico">Jurídico</option>
-          <option value="rh">RH</option>
-        </select>
-
-        <label for="disponibilidade">Disponibilidade</label>
-        <input type="checkbox" name="disponibilidade" id="integral" value="integral">
-        <label for="integral">Integral</label>
-        <input type="checkbox" name="disponibilidade" id ="meio-periodo" value="meio-periodo">
-        <label for="meio-periodo">Meio Período</label>
-        <input type="checkbox" name="disponibilidade" id="freelancer" value="freelancer">
-        <label for="freelancer">Freelancer</label>
-
-        <label for="contato">Qual a meelhor forma de entrar em contato com você</label>
-        <input type="radio" name="contato" id="email" value="email">
-        <label for="email">E-mail</label>
-        <input type="radio" name="contato" id="ligacao" value="ligacao">
-        <label for="ligacao">Ligação</label>
-        <input type="radio" name="contato" id="whatsapp" value="whatsapp">
-        <label for="whatsapp">Whatsapp</label>
-
-        <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-
-        <label for="curriculo">Currículo</label>
-        <button class="upload-curriculo">Upload</button>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-    <section class="infos-formulario">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque.</p>
-    </section>
+    <h1>Faça parte do nosso time</h1>
+    <div class="secoes">
+      <section class="formulario">
+        <form action="" method="post">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+  
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email">
+  
+          <label for="telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone">
+  
+          <label for="departamento">Departamento</label>
+          <select name="departamento" id="departamento">
+            <option value=""></option>
+            <option value="TI">TI</option>
+            <option value="financeiro">Financeiro</option>
+            <option value="juridico">Jurídico</option>
+            <option value="rh">RH</option>
+          </select>
+  
+          <div class="disponibilidade my-5">
+            <label for="disponibilidade">Disponibilidade</label>
+            <div class="opcoes-disponibilidade">
+              <input type="checkbox" name="disponibilidade" id="integral" value="integral">
+              <label for="integral">Integral</label>
+      
+              <input type="checkbox" name="disponibilidade" id ="meio-periodo" value="meio-periodo">
+              <label for="meio-periodo">Meio Período</label>
+      
+              <input type="checkbox" name="disponibilidade" id="freelancer" value="freelancer">
+              <label for="freelancer">Freelancer</label>
+            </div>
+          </div>
+  
+          <div class="forma-de-contato my-5">
+            <label for="contato">Qual a melhor forma de entrar em contato com você</label>
+            <div class="opcoes-contato">
+              <input type="radio" name="contato" id="email" value="email">
+              <label for="email">E-mail</label>
+  
+              <input type="radio" name="contato" id="ligacao" value="ligacao">
+              <label for="ligacao">Ligação</label>
+  
+              <input type="radio" name="contato" id="whatsapp" value="whatsapp">
+              <label for="whatsapp">Whatsapp</label>
+            </div>
+          </div>
+  
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+  
+          <div class="curriculo my-5">
+            <label for="curriculo">Currículo</label>
+            <button id="curriculo">Upload</button>
+          </div>
+  
+          <button type="submit" class="enviar-infos">Enviar</button>
+        </form>
+      </section>
+      <section class="infos-formulario">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus amet quam eum quos neque suscipit beatae explicabo eveniet autem inventore!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque. Libero vero maxime sapiente nostrum quasi ipsum, est earum veniam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque. Libero vero maxime sapiente nostrum quasi ipsum, est earum veniam!</p>
+      </section>
+    </div>
   </main>
+  <footer>
+    <div class="footer-logo">
+      <img src="./img/shoes-logo-white.png" alt="logo rodapé">
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium possimus similique fugit eos voluptatibus officiis pariatur harum optio eius molestiae perspiciatis ea culpa</span>
+    </div>
+    <div class="footer-listas">
+      <ul>
+        Categorias
+        <li>Sandálias</li>
+        <li>Botas</li>
+        <li>Tênis</li>
+        <li>Oxford</li>
+        <li>Coturnos</li>
+      </ul>
+      <ul>
+        Institucional
+        <li>Sobre nós</li>
+        <li>Perguntas frequentes</li>
+        <li>Política de privacidade</li>
+        <li>Rastreamento de produtos</li>
+        <li>Trabalhe Conosco</li>
+        <li>Contato</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

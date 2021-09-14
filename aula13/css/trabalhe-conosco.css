@@ -1,3 +1,52 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+main div.secoes { 
+  display: flex;
+  justify-content: space-around;
+}
+
+section.formulario, section.infos-formulario {
+  width: 40%
+}
+
+section.formulario h1 {
+  font-size: 36px;
+}
+
+section.formulario form {
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
+}
+
 section.formulario form textarea {
   resize: none;
+}
+
+section.formulario div.curriculo button {
+  border: none;
+  width: 100px;
+  height: 25px;
+  color: #fff;
+  background: darkgray;
+}
+
+section.formulario form button.enviar-infos {
+  color: #fff;
+  background: #c2185B;
+  font-size: 24px;
+  height: 30px;
+  border: none;
+}
+
+label, input {
+  margin: 5px 0;
+}
+
+.my-5 {
+  margin: 5px 0;
 }
