@@ -8,6 +8,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  box-shadow: 0px 1px 20px rgb(139 139 139 / 65%);
 }
 
 header ul {
