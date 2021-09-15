@@ -1,20 +1,29 @@
+/* section.banner-aviso {
+  width: 100%;
+  background-color: #c2185B;
+  height: 10vh;
+  position: fixed;
+} */
+
 main {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main h1 {
+  font-size: 36px;
+  color: darkgray;
 }
 
 main div.secoes { 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 section.formulario, section.infos-formulario {
   width: 40%
-}
-
-section.formulario h1 {
-  font-size: 36px;
 }
 
 section.formulario form {
@@ -32,7 +41,9 @@ section.formulario div.curriculo button {
   width: 100px;
   height: 25px;
   color: #fff;
-  background: darkgray;
+  background: #a9a9a9
+
+  ;
 }
 
 section.formulario form button.enviar-infos {
@@ -41,12 +52,21 @@ section.formulario form button.enviar-infos {
   font-size: 24px;
   height: 30px;
   border: none;
+  transition: 2s;
+  transition-delay: 0.5s;
 }
+
+section.formulario form button.enviar-infos:hover{
+  color: #c2185B;
+  background: #fff;
+  border: solid 0.5px #a9a9a9;
+}
+
 
 label, input {
   margin: 5px 0;
 }
 
 .my-5 {
-  margin: 5px 0;
+  margin: 20px 0;
 }

@@ -11,6 +11,20 @@ header {
   box-shadow: 0px 1px 20px rgb(139 139 139 / 65%);
 }
 
+/* início efeito rotação do logo utilizando rotate */
+header img {
+  transition: transform 0.8s ease-in-out;
+}
+
+header img:not(:hover) {
+  transform: rotate(0deg);
+}
+
+header img:hover {
+  transform: rotate(180deg);
+}
+/* fim efeito rotação do logo utilizando rotate */
+
 header ul {
   list-style: none;
   display: flex;
@@ -42,6 +56,23 @@ section.estilo div {
   justify-content: space-around;
 }
 
+/* inicio hover imagens section estilo e ver-detalhes */
+section.estilo div img, 
+section.ver-detalhes div.conteudo-sandalia img,
+section.ver-detalhes img {
+  cursor: pointer;
+  opacity: 1;
+  /* aplica uma transição mais suave */
+  transition: opacity 0.8s ease-in-out;
+}
+/* fim hover imagens section estilo e ver-detalhes */
+
+section.estilo div img:hover,
+section.ver-detalhes div.conteudo-sandalia img:hover,
+section.ver-detalhes img:hover {
+  opacity: 0.5;
+}
+
 section.estilo div .imagem-estilo {
   height: 500px;
   align-self: center;
@@ -65,9 +96,23 @@ section.trinta-off div.cards {
 }
 
 section.trinta-off div.cards div {
+  color: #000;
   background-color: #fff;
   margin: 15px;
 }
+
+/* inicio hover section 30%off */
+div.cards div img {
+  cursor: pointer;
+  opacity: 0.5;
+  /* Aplica uma transição mais suave */
+  transition: opacity 0.8s ease-in-out;
+}
+
+div.cards div img:hover {
+  opacity: 1;
+}
+/* fim hover section 30%off */
 
 section.ver-detalhes {
   display: flex;
