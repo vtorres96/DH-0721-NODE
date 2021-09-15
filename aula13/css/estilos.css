@@ -14,9 +14,6 @@ header {
 /* início efeito rotação do logo utilizando rotate */
 header img {
   transition: transform 0.8s ease-in-out;
-}
-
-header img:not(:hover) {
   transform: rotate(0deg);
 }
 
