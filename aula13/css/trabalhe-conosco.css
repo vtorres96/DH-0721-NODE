@@ -1,15 +1,26 @@
-/* section.banner-aviso {
-  width: 100%;
-  background-color: #c2185B;
-  height: 10vh;
+header {
   position: fixed;
-} */
+  top: 0;
+}
+
+section.banner-ofertas {
+  width: 100%;
+  color: #fff;
+  background-color: #c2185B;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 16vh
+}
 
 main {
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  margin-top: 180px;
 }
 
 main h1 {
