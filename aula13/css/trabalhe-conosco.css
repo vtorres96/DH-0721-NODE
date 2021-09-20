@@ -45,7 +45,15 @@ section.formulario form {
 
 section.formulario form textarea {
   resize: none;
+  background-color: #c2185B;
+  transition: 2s;
+  transition-delay: 0.5s;
 }
+
+section.formulario form textarea:focus {
+  background-color: #fff;
+}
+
 
 section.formulario div.curriculo button {
   border: none;
