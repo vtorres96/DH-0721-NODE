@@ -15,4 +15,8 @@ router.get('/sobre', function(req, res, next){
   res.render('sobre', { title: 'Petshop DH - Sobre Nós' });
 });
 
+router.get('/servicos', function(req, res, next){
+  res.render('servicos', { title: 'Petshop DH - Serviços' });
+});
+
 module.exports = router;
