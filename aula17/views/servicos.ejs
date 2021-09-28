@@ -5,39 +5,17 @@
         <div class="container">
             <h1>Serviços</h1>
 
-            <article>
-                <div class="thumb"></div>
-                <div class="info">
-                    <h2>Nome Serviço</h2>
-                    <p>R$ 00,00</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a, veritatis
-                        voluptates natus, quaerat voluptatibus tenetur in labore ad consequatur repudiandae quia
-                        veniam quas deserunt iure voluptatem. Saepe, est ipsam!</p>
-                    <a href="#" class="btn btn-primary">agendar</a>
-                </div>
-            </article>
-            <article>
-                <div class="thumb"></div>
-                <div class="info">
-                    <h2>Nome Serviço</h2>
-                    <p>R$ 00,00</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a, veritatis
-                        voluptates natus, quaerat voluptatibus tenetur in labore ad consequatur repudiandae quia
-                        veniam quas deserunt iure voluptatem. Saepe, est ipsam!</p>
-                    <a href="#" class="btn btn-primary">agendar</a>
-                </div>
-            </article>
-            <article>
-                <div class="thumb"></div>
-                <div class="info">
-                    <h2>Nome Serviço</h2>
-                    <p>R$ 00,00</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a, veritatis
-                        voluptates natus, quaerat voluptatibus tenetur in labore ad consequatur repudiandae quia
-                        veniam quas deserunt iure voluptatem. Saepe, est ipsam!</p>
-                    <a href="#" class="btn btn-primary">agendar</a>
-                </div>
-            </article>
+            <% servicos.forEach(servico => { %>            
+                <article>
+                    <img src="<%= servico.imagem %>" alt="">
+                    <div class="info">
+                        <h2><%= servico.titulo %> </h2>
+                        <p>R$ <%= servico.valor %> </p>
+                        <p><%= servico.descricao %> </p>
+                        <a href="#" class="btn btn-primary">agendar</a>
+                    </div>
+                </article>
+            <% }) %>
 
         </div>
     </section>
