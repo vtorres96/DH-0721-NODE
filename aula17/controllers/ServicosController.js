@@ -12,5 +12,9 @@ module.exports = {
     res.render('adicionar-servico', {
       title: 'Petshop DH - Adicionar Serviço'
     });
+  },
+
+  salvar(req, res, next){
+    
   }
 }

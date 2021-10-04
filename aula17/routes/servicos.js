@@ -7,6 +7,6 @@ let ServicosController = require('../controllers/ServicosController');
 router.get('/', ServicosController.index);
 
 router.get('/adicionar', ServicosController.cadastrar);
-// router.post('/adicionar')
+router.post('/adicionar', ServicosController.salvar);
 
 module.exports = router;
