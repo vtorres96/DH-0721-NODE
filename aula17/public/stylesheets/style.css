@@ -212,56 +212,56 @@ section.servicos-lista article .info h2 {
 
 /* contato */
 
-section.contato .container {
+section.section-padrao .container {
     flex-direction: column;
     align-items: flex-start;
 }
 
-section.contato h1 {
+section.section-padrao h1 {
     color: #FFBE51;
     font-size: 40px;
     margin-bottom: 70px;
 }
 
-.contato form input:not([type="radio"]):not([type="checkbox"]),
-.contato form textarea,
-.contato form select {
+.section-padrao form input:not([type="radio"]):not([type="checkbox"]),
+.section-padrao form textarea,
+.section-padrao form select {
     width: 100%;
     padding: 5px;
 }
 
-.contato form input:not([type="radio"]):not([type="checkbox"]):focus,
-.contato form textarea:focus,
-.contato form select:focus {
+.section-padrao form input:not([type="radio"]):not([type="checkbox"]):focus,
+.section-padrao form textarea:focus,
+.section-padrao form select:focus {
     outline-color: #00796B;
 }
 
-.contato form fieldset {
+.section-padrao form fieldset {
     margin: 15px 0;
     border-color: #fff;
 }
 
-.contato form textarea {
+.section-padrao form textarea {
     resize: none;
     height: 300px;
 }
 
-.contato form label {
+.section-padrao form label {
     margin: 10px 0 5px;
     display: inline-block;
 }
 
-.contato .info {
+.section-padrao .info {
     padding: 15px 30px;
 }
 
-.contato .info iframe {
+.section-padrao .info iframe {
     max-width: 100%;
     width: 700px;
     height: 300px;
 }
 
-section.contato a:any-link,
-section.contato p {
+section.section-padrao a:any-link,
+section.section-padrao p {
     color: #575757;
 }

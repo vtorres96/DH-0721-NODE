@@ -6,5 +6,11 @@ module.exports = {
       title: 'Petshop DH - Serviços',
       servicos: servicos
     });
+  },
+
+  cadastrar(req, res, next){
+    res.render('adicionar-servico', {
+      title: 'Petshop DH - Adicionar Serviço'
+    });
   }
 }
