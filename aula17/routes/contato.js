@@ -1,9 +1,13 @@
-let express = require('express')
-let router = express.Router();
+const express = require('express');
+const multer = require('multer');
+const uploadConfig = require('../config/upload');
 
 /* importando ContatoController */
-let ContatoController = require('../controllers/ContatoController');
+const ContatoController = require('../controllers/ContatoController');
 
-router.post('/cadastrar', ContatoController.cadastrar);
+const router = express.Router();
+const upload = multer(uploadConfig);
+
+router.post('/cadastrar', upload.single('imagem'), ContatoController.cadastrar);
 
 module.exports = router;
