@@ -7,7 +7,7 @@
 
             <% servicos.forEach(servico => { %>            
                 <article>
-                    <img src="<%= servico.imagem %>" alt="">
+                    <img src="/uploads/<%= servico.imagem %>" alt="">
                     <div class="info">
                         <h2><%= servico.titulo %> </h2>
                         <p>R$ <%= servico.valor %> </p>
