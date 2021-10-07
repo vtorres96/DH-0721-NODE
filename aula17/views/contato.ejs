@@ -6,12 +6,15 @@
       <h1>Contato</h1>
 
       <div class="align-row">
-        <form method="POST" action="/contato/cadastrar">
+        <form method="POST" enctype="multipart/form-data" action="/contato/cadastrar">
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome" required>
 
           <label for="email">E-mail</label>
           <input type="email" id="email" name="email" required>
+
+          <label for="imagem">Imagem</label>
+          <input type="file" id="imagem" name="imagem" required>
 
           <label for="mensagem">Mensagem</label>
           <textarea name="mensagem" id="mensagem" required></textarea>
