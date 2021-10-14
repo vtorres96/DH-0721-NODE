@@ -1,0 +1,26 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+<main>
+  <section class="section-padrao">
+    <div class="container">
+      <h2>Login</h2>
+      <p>Informe e-mail e senha para efetuar login na plataforma</p>
+      <div class="align-row">
+        <form method="POST" action="/users/logar">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" required>
+
+          <label for="senha">Senha</label>
+          <input type="text" id="senha" name="senha" required>
+
+          <button type="submit" class="btn btn-primary">enviar</button>
+        </form>
+
+        <% if (typeof erro !== "undefined"){ %>
+          <div>Usuário ou senha incorretos</div>
+        <% } %>
+      </div>
+    </div>
+  </section>
+</main>
+<%- include('./partials/footer') %> 

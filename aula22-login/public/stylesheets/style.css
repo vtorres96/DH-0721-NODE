@@ -223,6 +223,11 @@ section.section-padrao h1 {
     margin-bottom: 70px;
 }
 
+section.section-padrao h2 {
+    color: #FFBE51;
+    font-size: 40px;
+}
+
 .section-padrao form input:not([type="radio"]):not([type="checkbox"]),
 .section-padrao form textarea,
 .section-padrao form select {
