@@ -1,0 +1,41 @@
+Parte I
+1 - Construção da tela de login de usuários
+1.1 - Crjar um arquivo para página de login (views/login.ejs) - Ok
+1.2 - Criar rota/endpoint para listar a página de login - Ok
+(Obd? lembrar de utilizar método GET para rota/endpoint de login e 
+de atribuir a propriedade title no res.render passando um título para página)
+
+2 - Construção do arquivo data/usuarios.js 
+conténdo JSON com informações de usuários - Ok
+2.1 - Criar e exportar JSON com propriedades: ID, NOME, E-MAIL e SENHA 
+
+3 - Construção da autenticação do usuário no backend (UsuarioController)
+3.1 - Ao obter informações do usuário aplicar as seguintes condições:
+  a. obter o usuário através do e-mail
+  b. verificar se obteve usuário retornado na busca através do e-mail
+  caso não encontre e-mail, quer dizer que o usuário não existe em
+  nossa base de dados
+  c. caso usuário não exista retornar mensagem de erro genérica
+  Usuário ou senha incorretos
+  d. verificar se a senha informada pelo usuário está correta
+  caso não esteja, quer dizer que o usuário errou a senha ao informá-la
+  e. caso usuário informe senha incorreta, retornar mensagem de erro genérica
+  Usuário ou senha incorretos
+  f. redirecionar o usuário logado para uma página da nossa aplicação, construindo
+  uma sessão para mantermos as informações deste usuário logado, a medida que ele
+  trafegar pelas páginas
+
+Parte II
+1 - Tornar o menu dinâmico, exibindo opções distintas para usuário logado
+e usuário não logado
+2 - Remover a senha do usuário antes de iniciar a sessão de usuário logado
+3 - Efetuar logout (sair) encerrando a sessão do usuário logado e depois
+redirecionando ele para uma página da aplicação
+  a. adicionar uma rota no botão sair
+  b. temos a rota que foi adicionada? Não, então, deveremos criar a rota
+  c. a rota deverá ser executada em um método de determinado Controller,
+  portanto, também deveremos criar tal método
+  d. preparar o método que foi criado dentro do Controller, para que seja
+  destruída a sessão e o usuário redirecionado para a home da aplicação
+
+

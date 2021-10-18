@@ -19,11 +19,18 @@ module.exports = {
       });
     }
 
-    req.session.usuario = usuario;
+    let { senha: semSenha, ...usuarioSemSenha } = usuario
+
+    req.session.usuario = usuarioSemSenha;
 
     res.render('index', {
       title: 'Petshop DH',
       usuario: req.session.usuario
     });
+  },
+
+  deslogar(req, res, next) {
+    req.session.destroy();
+    res.redirect('/');
   }
 }
