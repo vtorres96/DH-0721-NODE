@@ -1,1 +1,1 @@
-module.exports = [{"id":1,"nome":"Abirosvaldo da Silva","email":"abira@osvaldo.com.br","senha":"teste"}]
+module.exports = [{"id":1,"nome":"Abirosvaldo da Silva","email":"abira@osvaldo.com.br","senha":"$2b$10$xTfRDDgbCeePALCrXPsG0upxZkepmSAcUd.p5yqzdyo0bHkTqOkoS"},{"id":2,"nome":"Victor T Moreno","email":"vtorres@digitalhouse.com","senha":"$2b$10$xTfRDDgbCeePALCrXPsG0upxZkepmSAcUd.p5yqzdyo0bHkTqOkoS"},{"id":3,"nome":"Teste 123","email":"teste@gmail.com","senha":"$2b$10$OeLsEvsf6fAqmNplIXbSE..Mv/NlGhbtotGb.d1Cwpf6kMgstK4Ji"}]
