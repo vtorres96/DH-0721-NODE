@@ -16,7 +16,7 @@ module.exports = {
   },
 
   async editar(req, res, next){
-    res.render('editar-cliente');
+
   },
 
   async atualizar(req, res, next){
