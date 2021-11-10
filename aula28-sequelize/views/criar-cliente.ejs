@@ -15,9 +15,16 @@
             <label for="input-email">E-mail</label>
             <input type="email" class="form-control" name="email" id="input-email" placeholder="Email@exemplo.com">
           </div>
-          <div class="form-group col-md-12">
-            <label for="input-senha">Senha</label>
-            <input type="password" class="form-control" name="password" id="input-senha" placeholder="Insira sua senha">
+          <div class="form-group col-md-6">
+            <label for="input-cpf">CPF</label>
+            <input type="text" class="form-control" name="cpf" id="input-cpf" placeholder="Informe seu cpf" aria-label="Informe seu cpf">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Sexo">Sexo</label>
+            <select class="form-control" name="sexo" id="sexo" aria-label="Selecione...">
+              <option value="M">Masculino</option>
+              <option value="F">Feminino</option>
+            </select>
           </div>
         </div>
         <% if (typeof added !== "undefined") { %>
