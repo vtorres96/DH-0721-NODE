@@ -10,26 +10,21 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/clientes/listar">Clientes</a>
           </li>
-          <% if (typeof user !== "undefined") { %>
-            <li class="nav-item">
-              <a class="nav-link" href="/recipes">Receitas</a>
-            </li>
-          <% } %>
         </ul>
         <ul class="navbar-nav ml-auto">
-          <% if (typeof user !== "undefined") { %>
+          <% if (typeof cliente !== "undefined") { %>
             <li class="nav-item">
-              <a href="" class="nav-link">Olá, <%= user.name %></a>
+              <a href="" class="nav-link">Olá, <%= cliente.name %></a>
             </li>
             <li class="nav-item">
-              <a href="/users/logout" class="nav-link">Sair</a>
+              <a href="/clientes/logout" class="nav-link">Sair</a>
             </li>
           <% } else { %>
             <li class="nav-item">
-              <a href="/users/create" class="nav-link">Cadastre-se</a>
+              <a href="/clientes/cadastrar" class="nav-link">Cadastre-se</a>
             </li>
             <li class="nav-item">
-              <a href="/users/login" class="nav-link">Login</a>
+              <a href="/clientes/login" class="nav-link">Login</a>
             </li>
            <% } %>
         </ul>
