@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#clientes { 
+  min-height: calc(100vh - 80px);
+}
+
+footer {
+  height: 100px;
+}
+
+footer .icons {
+  font-size: 20px;
+}

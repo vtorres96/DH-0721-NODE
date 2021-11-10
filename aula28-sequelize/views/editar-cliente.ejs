@@ -1,0 +1,42 @@
+<%- include('./partials/head'); %> 
+<%- include('./partials/header'); %> 
+
+<main class="container">
+  <section class="formulario mt-5" id="formulario">
+    <h2>Altere sua receita</h2>
+    <p>Preencha o formulário abaixo para compartilhar conosco sua receita</p>
+    <form action="/clientes/atualizar/<%= cliente.id %>" method="POST">
+      <div class="row">
+        <div class="col">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" value="<%= cliente.name %>" name="name" id="nome" placeholder="Informe seu nome" aria-label="Informe seu nome">
+        </div>
+        <div class="col">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" value="<%= cliente.email %>" name="email" id="email" placeholder="Informe seu e-mail" aria-label="Informe seu e-mail">
+        </div>
+        <div class="col">
+          <label for="cpf">CPF</label>
+          <input type="text" class="form-control" value="<%= cliente.cpf %>" name="cpf" id="cpf" placeholder="Informe seu cpf" aria-label="Informe seu cpf">
+        </div>
+        <div class="col">
+          <label for="Sexo">Sexo</label>
+          <select class="form-select" name="sexo" id="sexo" aria-label="Selecione...">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+          </select>
+        </div>
+      </div>
+      <% if (typeof updated != "undefined") { %>
+       <div class="form-group col-md-12 alert alert-success">
+        Cliente alterado com sucesso
+       </div>
+      <% } %>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+</main>
+
+<%- include('./partials/footer'); %> 
+</body>
+</html>

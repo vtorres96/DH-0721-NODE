@@ -1,0 +1,105 @@
+<%- include('./partials/head'); %> 
+<%- include('./partials/header'); %> 
+
+<main class="container">
+  <section class="mt-3" id="clientes">
+    <h1>Clientes</h1>
+    <p>Confira abaixo as receitas recebidas</p>
+
+    <form action="/clientes/listar" method="GET">
+      <div class="row mb-4">
+        <div class="col">
+          <input type="text" name="word" value="" class="form-control" placeholder="Pesquisar...">
+        </div>
+        <div class="pr-3">
+          <button type="submit" class="btn btn-primary">Pesquisar</button>
+        </div>
+      </div>
+    </form>
+    
+    <% if(typeof deleted !== 'undefined'){ %> 
+      <div class="col-md-12 alert alert-success">
+        Cliente excluído com sucesso
+      </div>
+    <% } %>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Nome</th>
+          <th scope="col">E-mail</th>
+          <th scope="col">CPF</th>
+          <th scope="col">Sexo</th>
+          <th scope="col" colspan="2">Ações</th>
+        </tr>
+      </thead>
+      <tbody>  
+        <% clientes.forEach(cliente => { %>         
+          <tr>
+            <th scope="row"><%= cliente.idcliente %> </th>
+            <td><%= cliente.nome %> </td>
+            <td><%= cliente.email %> </td>
+            <td><%= cliente.cpf %> </td>
+            <td><%= cliente.sexo %> </td>
+            <td>
+              <a href="/clientes/editar/<%= cliente.idcliente %>">
+                <i class="fas fa-edit"></i>
+              </a>
+            </td>
+            <td>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#modal-<%= cliente.idcliente %>">
+                <i class="fas fa-trash"></i>
+              </a>
+              <!-- Modal -->
+              <div class="modal fade" id="modal-<%= cliente.idcliente %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Exclusão de Receita</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Deseja realmente excluir o cliente <%= cliente.nome %> ?  
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <a href="/clientes/excluir/<%= cliente.idcliente %>">
+                        <button type="button" class="btn btn-danger">Confirmar</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- paginacao  -->
+  <div class="d-flex justify-content-center mt-3">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</main>
+
+<%- include('./partials/footer'); %> 
+</body>
+</html>
+
