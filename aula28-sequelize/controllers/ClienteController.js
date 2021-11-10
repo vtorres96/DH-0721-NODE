@@ -7,23 +7,23 @@ module.exports = {
     res.render('listar-cliente', { clientes: clientes });
   },
 
-  // async cadastrar(req, res, next){
-  //   res.render('criar-cliente');
-  // },
+  async cadastrar(req, res, next){
+    res.render('criar-cliente');
+  },
 
-  // async salvar(req, res, next){
+  async salvar(req, res, next){
 
-  // },
+  },
 
-  // async editar(req, res, next){
+  async editar(req, res, next){
+    res.render('editar-cliente');
+  },
+
+  async atualizar(req, res, next){
     
-  // },
+  },
 
-  // async atualizar(req, res, next){
+  async excluir(req, res, next){
     
-  // },
-
-  // async excluir(req, res, next){
-    
-  // },
+  },
 }
