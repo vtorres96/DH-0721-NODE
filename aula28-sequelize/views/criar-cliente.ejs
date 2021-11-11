@@ -9,7 +9,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="input-nome">Nome</label>
-            <input type="text" class="form-control" name="name" id="input-nome" placeholder="Insira seu nome">
+            <input type="text" class="form-control" name="nome" id="input-nome" placeholder="Insira seu nome">
           </div>
           <div class="form-group col-md-6">
             <label for="input-email">E-mail</label>
@@ -27,9 +27,9 @@
             </select>
           </div>
         </div>
-        <% if (typeof added !== "undefined") { %>
+        <% if (typeof adicionado !== "undefined") { %>
           <div class="form-group col-md-12 alert alert-success">
-            Usuário cadastrado com sucesso
+            Cliente cadastrado com sucesso
           </div>
         <% } %> 
         <button type="submit" class="btn btn-primary">Enviar</button>

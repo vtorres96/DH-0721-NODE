@@ -10,7 +10,7 @@ router.get('/listar', ClienteController.index);
 router.get('/cadastrar', ClienteController.cadastrar);
 
 /* processando cadastro de clientes */
-router.post('/cadastrar', ClienteController.salvar);
+router.post('/salvar', ClienteController.salvar);
 
 /* renderizando tela de edicao de clientes */
 router.get('/editar/:id', ClienteController.editar);
