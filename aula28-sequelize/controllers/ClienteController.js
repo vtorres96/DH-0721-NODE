@@ -21,6 +21,7 @@ module.exports = {
       palavra: palavra,
       pagina: pagina,
       totalDePaginas: totalDePaginas,
+      totalDeRegistros: totalDeRegistros,
     });
   },
 

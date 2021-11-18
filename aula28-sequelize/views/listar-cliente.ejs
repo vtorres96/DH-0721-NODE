@@ -80,46 +80,51 @@
 
   <!-- paginacao  -->
   <div class="d-flex justify-content-center mt-3">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item">
-          <%
-            let palavraHrefVoltar = '';
-            let palavraHref = '';
-
-            if (palavra !== '') {
-              palavraHref = 'palavra=' + palavra + '&';
-            }
-
-            if (pagina > 1) {
-              palavraHrefVoltar = '/clientes/listar?' + palavraHref + 'pagina=' + (pagina - 1)
-            }
-          %> 
-          <a class="page-link" href="<%= palavraHrefVoltar %>" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <%
-            let palavraHrefAvancar = '';
-            let palavraHref2 = '';
-
-            if (palavra !== '') {
-              palavraHref2 = 'palavra=' + palavra + '&';
-            }
-
-            if (pagina < totalDePaginas) {
-              palavraHrefAvancar = '/clientes/listar?' + palavraHref2 + 'pagina=' + (pagina + 1)
-            }
-          %> 
-          <a class="page-link" href="<%= palavraHrefAvancar %> " aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="flex-direction-column">      
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <%
+              let palavraHrefVoltar = '';
+              let palavraHref = '';
+  
+              if (palavra !== '') {
+                palavraHref = 'palavra=' + palavra + '&';
+              }
+  
+              if (pagina > 1) {
+                palavraHrefVoltar = '/clientes/listar?' + palavraHref + 'pagina=' + (pagina - 1)
+              }
+            %> 
+            <a class="page-link" href="<%= palavraHrefVoltar %>" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item">
+            <%
+              let palavraHrefAvancar = '';
+              let palavraHref2 = '';
+  
+              if (palavra !== '') {
+                palavraHref2 = 'palavra=' + palavra + '&';
+              }
+  
+              if (pagina < totalDePaginas) {
+                palavraHrefAvancar = '/clientes/listar?' + palavraHref2 + 'pagina=' + (pagina + 1)
+              }
+            %> 
+            <a class="page-link" href="<%= palavraHrefAvancar %> " aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <%= 'Página ' + pagina + ' de ' + totalDePaginas %>
+      </div>
+    </div>
   </div>
 </main>
 
