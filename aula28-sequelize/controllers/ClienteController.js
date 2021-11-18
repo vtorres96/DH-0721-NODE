@@ -2,9 +2,26 @@ const { Cliente, Sequelize } = require('../models');
 
 module.exports = {
   async index(req, res, next){
-    const clientes = await Cliente.findAll();
+    let { palavra = '', pagina = 1 } = req.query;
+    pagina = parseInt(pagina);
+    let quantidadeExibida = 5;
 
-    res.render('listar-cliente', { clientes: clientes });
+    let { count: totalDeRegistros, rows: clientes } = await Cliente.findAndCountAll({
+      where: {
+        nome: { [Sequelize.Op.like]: `%${palavra}%` }
+      },
+      limit: quantidadeExibida,
+      offset: ((pagina - 1) * quantidadeExibida),
+    });
+
+    let totalDePaginas = Math.ceil(totalDeRegistros / quantidadeExibida);
+
+    res.render('listar-cliente', {
+      clientes: clientes,
+      palavra: palavra,
+      pagina: pagina,
+      totalDePaginas: totalDePaginas,
+    });
   },
 
   async cadastrar(req, res, next){
