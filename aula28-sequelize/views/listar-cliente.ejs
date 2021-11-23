@@ -31,6 +31,7 @@
           <th scope="col">E-mail</th>
           <th scope="col">CPF</th>
           <th scope="col">Sexo</th>
+          <th scope="col">Endereço</th>
           <th scope="col">Telefone</th>
           <th scope="col" colspan="2">Ações</th>
         </tr>
@@ -43,6 +44,7 @@
             <td><%= cliente.email %> </td>
             <td><%= cliente.cpf %> </td>
             <td><%= cliente.sexo %> </td>
+            <td><%= cliente.endereco.rua %> </td>
             <% if (cliente.telefone.length > 0) { %>
               <td>
                 <% cliente.telefone.forEach(item => { %>

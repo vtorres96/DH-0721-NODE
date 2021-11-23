@@ -14,9 +14,14 @@ module.exports = {
         },
         limit: quantidadeExibida,
         offset: ((pagina - 1) * quantidadeExibida),
-        include: [{
-          association: 'telefone',
-        }],
+        include: [
+          {
+            association: 'telefone',
+          },
+          {
+            association: 'endereco',
+          },
+      ],
       });
   
       console.log(clientes);

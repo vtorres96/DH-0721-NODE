@@ -18,10 +18,12 @@ module.exports = (sequelize, DataType) => {
     timestamps: false,
 	});
 
-  // Endereco.hasOne(Cliente, {
-  //   foreignKey: 'idcliente',
-  //   as: 'cliente'
-  // })
+  Endereco.associate = (model) => {
+    Endereco.hasOne(model.Cliente, {
+      foreignKey: 'idcliente',
+      as: 'cliente'
+    })
+  }
 
 	return Endereco;
 };
