@@ -1,3 +1,5 @@
+const { Endereco } = require('../models');
+
 module.exports = (sequelize, DataType) => {
 	const Cliente = sequelize.define(
 		'Cliente', 
@@ -21,8 +23,13 @@ module.exports = (sequelize, DataType) => {
     Cliente.hasMany(lista.Telefone, {
       foreignKey: 'id_cliente',
       as: 'telefone'
-    })
+    });
   }
+
+  Cliente.hasOne(Endereco, {
+    foreignKey: 'id_cliente',
+    as: 'endereco'
+  });
 
 	return Cliente;
 };

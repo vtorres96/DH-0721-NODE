@@ -1,5 +1,4 @@
 const { Cliente, Sequelize } = require('../models');
-const Telefone = require('../models/Telefone');
 
 module.exports = {
   async index(req, res, next){
