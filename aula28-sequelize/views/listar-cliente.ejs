@@ -44,7 +44,7 @@
             <td><%= cliente.email %> </td>
             <td><%= cliente.cpf %> </td>
             <td><%= cliente.sexo %> </td>
-            <td><%= cliente.endereco.rua %> </td>
+            <td> <%= cliente.endereco ? cliente.endereco.rua : '-' %> </td>
             <% if (cliente.telefone.length > 0) { %>
               <td>
                 <% cliente.telefone.forEach(item => { %>
@@ -52,7 +52,7 @@
                 <% }) %>
               </td>
             <% } else { %>
-              <td></td>
+              <td> - </td>
             <% } %>
             <td>
               <a href="/clientes/editar/<%= cliente.idcliente %>">

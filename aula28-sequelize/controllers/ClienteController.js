@@ -20,11 +20,14 @@ module.exports = {
           },
           {
             association: 'endereco',
-          },
+            required: false,
+          }
       ],
       });
   
-      console.log(clientes);
+      clientes.forEach(cliente => {
+        console.log(cliente.endereco ? cliente.endereco.rua : '')  
+      });
   
       let totalDePaginas = Math.ceil(totalDeRegistros / quantidadeExibida);
   
