@@ -9,11 +9,19 @@ module.exports = (sequelize, DataType) => {
     },
     tipo: DataType.STRING,
 		numero: DataType.STRING,
-		idcliente: DataType.INTEGER,
+		id_cliente: DataType.INTEGER,
 	},
 {
     tableName: 'telefone',
     timestamps: false,
 	});
+
+  Telefone.associate = (item) => {
+    Telefone.belongsTo(item.Cliente, {
+      foreignKey: 'id_cliente',
+      as: 'cliente'
+    })
+  }
+
 	return Telefone;
 };

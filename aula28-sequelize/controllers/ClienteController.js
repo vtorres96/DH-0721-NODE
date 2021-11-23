@@ -1,28 +1,39 @@
 const { Cliente, Sequelize } = require('../models');
+const Telefone = require('../models/Telefone');
 
 module.exports = {
   async index(req, res, next){
-    let { palavra = '', pagina = 1 } = req.query;
-    pagina = parseInt(pagina);
-    let quantidadeExibida = 5;
-
-    let { count: totalDeRegistros, rows: clientes } = await Cliente.findAndCountAll({
-      where: {
-        nome: { [Sequelize.Op.like]: `%${palavra}%` }
-      },
-      limit: quantidadeExibida,
-      offset: ((pagina - 1) * quantidadeExibida),
-    });
-
-    let totalDePaginas = Math.ceil(totalDeRegistros / quantidadeExibida);
-
-    res.render('listar-cliente', {
-      clientes: clientes,
-      palavra: palavra,
-      pagina: pagina,
-      totalDePaginas: totalDePaginas,
-      totalDeRegistros: totalDeRegistros,
-    });
+    try {
+      
+      let { palavra = '', pagina = 1 } = req.query;
+      pagina = parseInt(pagina);
+      let quantidadeExibida = 5;
+  
+      let { count: totalDeRegistros, rows: clientes } = await Cliente.findAndCountAll({
+        where: {
+          nome: { [Sequelize.Op.like]: `%${palavra}%` }
+        },
+        limit: quantidadeExibida,
+        offset: ((pagina - 1) * quantidadeExibida),
+        include: [{
+          association: 'telefone',
+        }],
+      });
+  
+      console.log(clientes);
+  
+      let totalDePaginas = Math.ceil(totalDeRegistros / quantidadeExibida);
+  
+      res.render('listar-cliente', {
+        clientes: clientes,
+        palavra: palavra,
+        pagina: pagina,
+        totalDePaginas: totalDePaginas,
+        totalDeRegistros: totalDeRegistros,
+      });
+    } catch (error) {
+      console.log('Erro ' + error);
+    }
   },
 
   async cadastrar(req, res, next){
