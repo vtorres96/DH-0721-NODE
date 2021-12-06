@@ -1,14 +1,20 @@
-const express = require('express')
-const cors = require('cors')
+var express = require('express');
+var path = require('path');
 
-const routes = require('./routes/index')
+var indexRouter = require('./routes/index');
 
-const app = express()
+var app = express();
 
-app.use(cors())
-app.use(express.json())
-app.use(routes)
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-app.listen(3333, () => {
-  console.log('Servidor rodando na porta http://localhost:3333')
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', indexRouter);
+
+app.listen(3000, () => {
+  console.log('servidor rodando na porta http://localhost:3000')
 })

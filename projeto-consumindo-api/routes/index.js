@@ -5,4 +5,4 @@ router.get('/fotos', (req, res, next) => {
   res.send('Ola Mundo')
 })
 
-module.exports = router
+module.exports = router 
