@@ -8,25 +8,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/clientes/listar">Clientes</a>
+            <a class="nav-link active" aria-current="page" href="/fotos">Fotos</a>
           </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <% if (typeof cliente !== "undefined") { %>
-            <li class="nav-item">
-              <a href="" class="nav-link">Olá, <%= cliente.name %></a>
-            </li>
-            <li class="nav-item">
-              <a href="/clientes/logout" class="nav-link">Sair</a>
-            </li>
-          <% } else { %>
-            <li class="nav-item">
-              <a href="/clientes/cadastrar" class="nav-link">Cadastre-se</a>
-            </li>
-            <li class="nav-item">
-              <a href="/clientes/login" class="nav-link">Login</a>
-            </li>
-           <% } %>
         </ul>
       </div>
     </div>
