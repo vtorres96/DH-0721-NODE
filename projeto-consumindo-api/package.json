@@ -1,0 +1,20 @@
+{
+  "name": "projeto-consumindo-api",
+  "version": "1.0.0",
+  "description": "Aula 01 do módulo Sequelize (backend conectando-se com banco de dados)\r Trabalharemos hoje com alguns métodos do pacote sequelize, como:",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-parser": "^1.4.5",
+    "cookieparser": "^0.1.0",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3-rc.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
