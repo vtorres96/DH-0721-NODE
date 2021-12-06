@@ -4,11 +4,16 @@
   "description": "Aula 01 do módulo Sequelize (backend conectando-se com banco de dados)\r Trabalharemos hoje com alguns métodos do pacote sequelize, como:",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.24.0",
     "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./app.js"
   },
   "keywords": [],
   "author": "",
