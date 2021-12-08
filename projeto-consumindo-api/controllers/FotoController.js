@@ -32,6 +32,16 @@ module.exports = {
   },
 
   async index(req, res, next) {
-    res.render('index')
+    try {
+      let { data } = await api.get('/photos', {
+        params: {
+          _limit: 15
+        }
+      })
+
+      return res.render('index', { fotos: data })
+    } catch (error) {
+      return res.render('erro', { erro: error })
+    }
   }
 }
