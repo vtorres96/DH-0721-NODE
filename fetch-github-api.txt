@@ -6,7 +6,7 @@ deveremos seguir algumas instruções nesse bloco, caso contrário, deveremos ex
 Passos para concluir a tarefa com excelência:
 1º passo: criar um arquivo controller com o título GitHubController.js, no diretório controllers/
 2º passo: criar a estrutura de module.exports e um método assíncrono entitulado index() dentro do arquivo GitHubController.js
-3º passo: criar uma nova rota em routes/index.js que executará o método index() dentro do controller GitHubController.js
+3º passo: criar uma nova rota buscar-repositorios-por-usuario em routes/index.js que executará o método index() dentro do controller GitHubController.js
 
 Agora que temos a estrutura básica de uma rota executando um método específico dentro de nosso controller, vamos trabalhar a etapa de importação do axios no projeto:
 Passos para concluir a tarefa de importação e criação do serviço com axios:
