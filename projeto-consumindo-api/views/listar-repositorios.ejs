@@ -1,0 +1,46 @@
+<%- include('./partials/head'); %> 
+<%- include('./partials/header'); %> 
+      
+      <main class="container">
+        <section class="fotos" id="fotos">
+          <h2>Fotos</h2>
+          <p>Abaixo temos os repositórios do usuário <%= usuario %> </p>
+             
+          <form action="/buscar-repositorios-por-usuario" method="GET">
+            <div class="row mb-4">
+              <div class="col">
+                <input type="text" name="usuario" value="<%= usuario %>" class="form-control" placeholder="Pesquisar...">
+              </div>
+              <div class="pr-3">
+                <button type="submit" class="btn btn-primary">Pesquisar</button>
+              </div>
+            </div>
+          </form>
+          
+          <% if(typeof repositorios !== 'undefined'){ %> 
+            <div class="col-md-12 alert alert-success">
+              Usuário <%= usuario %> não encontrado 
+            </div>
+          <% } else { %>
+            <div class="card-deck">
+              <!-- inicio foreach aqui -->
+              <% repositorios.forEach(repositorio => { %>               
+                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                  <div class="card">
+                    <img src="<%= repositorio.thumbnailUrl %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= repositorio.name %> </h5>
+                      <!-- <p class="card-text">Texto Se Houver</p> -->
+                      <a href="<%= repositorio.html_url %>" class="btn btn-primary">ver mais</a>
+                    </div>
+                  </div>
+                </div>
+              <% }) %>
+              <!-- fim foreach aqui -->
+            </div>
+          <% } %>
+        </section>
+      </main>
+      <%- include('./partials/footer'); %> 
+    </body>
+    </html>
