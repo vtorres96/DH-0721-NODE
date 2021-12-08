@@ -17,7 +17,7 @@ const axios = require('axios');
 // forma utilizando async/await com try/catch
 const buscarInformacoesDeUsuarioNoGithub = async (username) => {
   try {
-    let { data } = await axios.get('https://api.github.com/usersds/' + username)
+    let { data } = await axios.get('https://api.github.com/users/' + username)
     console.log(data)
   } catch (erro) {
     console.log(erro)
@@ -25,7 +25,7 @@ const buscarInformacoesDeUsuarioNoGithub = async (username) => {
 }
 
 // const buscarInformacoesDeUsuarioNoGithub = async (username) => {
-//   let retorno = await axios.get('https://api.github.com/userss/' + username)
+//   let retorno = await axios.get('https://api.github.com/users/' + username)
 //   if (retorno.status == 200) {
 //     console.log(retorno.data)
 //   } else {
