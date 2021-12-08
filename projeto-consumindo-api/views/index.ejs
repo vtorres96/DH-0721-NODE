@@ -2,8 +2,23 @@
 <%- include('./partials/header'); %> 
       
       <main class="container">
-        <section class="receitas" id="receitas">
-          <!-- conteudo da aula aqui -->
+        <section class="fotos" id="fotos">
+          <h2>Fotos</h2>
+          <p>Abaixo temos as fotos mais bacanas para você</p>
+          <div class="card-deck">
+              <!-- inicio foreach aqui -->
+              <div class="col-12 col-md-6 col-lg-4 mt-3">
+                <div class="card">
+                  <img src="" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Titulo Foto</h5>
+                    <p class="card-text">Texto Se Houver</p>
+                    <a href="#" class="btn btn-primary">ver mais</a>
+                  </div>
+                </div>
+              </div>
+              <!-- fim foreach aqui -->
+          </div>
         </section>
   
         <section class="localizacao mt-5" id="localizacao">
