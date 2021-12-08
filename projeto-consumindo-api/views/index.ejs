@@ -6,18 +6,20 @@
           <h2>Fotos</h2>
           <p>Abaixo temos as fotos mais bacanas para você</p>
           <div class="card-deck">
-              <!-- inicio foreach aqui -->
+            <!-- inicio foreach aqui -->
+            <% fotos.forEach(foto => { %>               
               <div class="col-12 col-md-6 col-lg-4 mt-3">
                 <div class="card">
-                  <img src="" class="card-img-top" alt="...">
+                  <img src="<%= foto.thumbnailUrl %>" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Titulo Foto</h5>
-                    <p class="card-text">Texto Se Houver</p>
-                    <a href="#" class="btn btn-primary">ver mais</a>
+                    <h5 class="card-title"><%= foto.title %> </h5>
+                    <!-- <p class="card-text">Texto Se Houver</p>
+                    <a href="#" class="btn btn-primary">ver mais</a> -->
                   </div>
                 </div>
               </div>
-              <!-- fim foreach aqui -->
+            <% }) %>
+            <!-- fim foreach aqui -->
           </div>
         </section>
   
