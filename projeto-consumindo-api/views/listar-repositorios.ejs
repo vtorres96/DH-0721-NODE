@@ -17,11 +17,12 @@
             </div>
           </form>
           
-          <% if(typeof repositorios !== 'undefined'){ %> 
+          <% if(typeof usuario == 'undefined'){ %> 
             <div class="col-md-12 alert alert-success">
               Usuário <%= usuario %> não encontrado 
             </div>
-          <% } else { %>
+          <% } %>
+          <% if(repositorios.length > 0){ %> 
             <div class="card-deck">
               <!-- inicio foreach aqui -->
               <% repositorios.forEach(repositorio => { %>               
