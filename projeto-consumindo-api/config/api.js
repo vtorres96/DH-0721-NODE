@@ -1,7 +1,14 @@
 const axios = require('axios')
 
-const api = axios.create({
+const jsonPlaceHolderApi = axios.create({
   baseURL: 'https://jsonplaceholder.typicode.com'
 })
 
-module.exports = api
+const gitHubApi = axios.create({
+  baseURL: 'https://api.github.com/users'
+})
+
+module.exports = {
+  jsonPlaceHolderApi,
+  gitHubApi
+}
