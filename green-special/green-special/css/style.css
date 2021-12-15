@@ -1,0 +1,16 @@
+/* ADICIONANDO TRANSITION PARA AS IMAGENS E OS CARDS E DEIXAR MAIS SMOOTH */
+.ser-icon .img-fluid,
+.services-inner-box,
+.logo,
+#mainNav {
+  transition: all .3s;
+}
+
+.grow {
+  transform: scale(1.1);
+}
+
+.focus {
+  background-color: rgba(141, 189, 86, .8);
+  box-shadow: 0 0 0 4px rgb(141 189 86 / 40%) !important;
+}
