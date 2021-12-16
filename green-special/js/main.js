@@ -1,4 +1,4 @@
-// Aula 1
+// Aula 1 - Introducao
 // verificar se o arquivo main.js esta importado no arquivo index.html
 // console.log('Hello World')
 
@@ -59,3 +59,83 @@ let mainNav = document.getElementById('mainNav')
 // retorna uma lista, ou, caso não encontre nenhum elemento, retorna a lista vazia
 let navbarGetElementByClassName = document.getElementsByClassName('navbar')
 // console.log(navbarGetElementByClassName)
+
+// Aula 2 - Eventos
+// 1 - Procurar no index.html tag img que refere-se ao logo do nosso site
+// e adicionaremos uma classe "logo"
+// 2 - capturar o elemento img atraves da classe logo e armazenar em uma
+// variavel para trabalharmos
+let logo = document.querySelector('img.logo')
+
+// 3 - Utilizando addEventListener combinado com mouseover e mouseout 
+// aplicar uma rotação no logo
+// a) quando o usuário passar o mouse por cima do logo, deveremos rotacionar o ângulo
+// da imagem em 180º
+// logo.addEventListener('mouseover', () => setTimeout(() => {
+//   logo.style.transform = 'rotate(180deg)'
+// }, 500))
+
+// b) quando o usuário remover o mouse de cima do logo, deveremos
+// fazer a rotação para 0º, aplicando sensação que o logo está girando
+// logo.addEventListener('mouseout', () => setTimeout(() => {
+//   logo.style.transform = 'rotate(0)'
+// }, 1000))
+
+// outra opcao de resolver o item 3 - onmouseover e onmouseout
+logo.onmouseover = () => setTimeout(() => {
+  logo.style.transform = 'rotate(180deg)'
+}, 500);
+
+logo.onmouseout = () => setTimeout(() => {
+  logo.style.transform = 'rotate(0)'
+}, 1000);
+
+// 4 - Fazer o header ficar transparente no topo da página e remover a transparência quando 
+// aplicarmos scroll par baixo, ou seja, descer a página
+// a) Selecionar o elemento header para altera o estilo dele de acordo com nossa necessidade
+let header = document.querySelector('nav#mainNav')
+
+// b) Aplicar tranparencia enquanto o usuário não tiver scrollado/descido a página
+// c) Aplicar novamente a cor default quando o usuário tiver scrollado/descido a página
+// OBS: aplicar background-color: rgba(255, 255, 255, 0.7) para deixar menu transparente
+// OBS: aplicar background-color: rgba(255, 255, 255, 1) para deixar menu na cor default
+// window.onscroll = () => {
+//   // verificando se o topo da janela esta alinhado com o topo da pagina
+//   if (window.scrollY == 0) {
+//     header.style.backgroundColor = 'rgba(255, 255, 255, 0.7)'
+//   } else {
+//     header.style.backgroundColor = 'rgba(255, 255, 255, 1)'
+//   }
+// }
+
+// outra opcao - inves de aplicar style iremos adicionar esses backgrounds em classes,
+// por exemplo, aplica-transparencia, remove-transparencia, e a partir dessas classes,
+// iremos fazer uma forma de adicionar/remover a classe de acordo com a necessidade
+window.onscroll = () => {
+  // verificando se o topo da janela esta alinhado com o topo da pagina
+  if (window.scrollY == 0) {
+    header.classList.add('aplica-transparencia')
+    header.classList.remove('remove-transparencia')
+  } else {
+    header.classList.add('remove-transparencia')
+    header.classList.remove('aplica-transparencia')
+  }
+}
+
+// 5 - FAZER AS IMAGENS DO CARD AUMENTAREM DE TAMANHO AO PASSAR O MOUSE
+// a) buscar todas as imagens
+let imagensDosCards = document.querySelectorAll('div.ser-icon img.img-fluid')
+// console.log(imagensDosCards)
+
+// b) criar um loop para adicionar o evento em cada imagem do array
+imagensDosCards.forEach(imagem => {
+  imagem.onmouseover = () => {
+    // adicionando a classe "grow" na imagem que esta com o mouse posicionado em cima
+    imagem.classList.toggle('grow')
+  }
+
+  imagem.onmouseout = () => {
+    // removendo a classe "grow" da imagem quuando o mouse nao estiver posicionado em cima
+    imagem.classList.toggle('grow')
+  }
+})
