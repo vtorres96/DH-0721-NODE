@@ -14,3 +14,11 @@
   background-color: rgba(141, 189, 86, .8);
   box-shadow: 0 0 0 4px rgb(141 189 86 / 40%) !important;
 }
+
+.aplica-transparencia {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.remove-transparencia {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
